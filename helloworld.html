@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+       
+        <Div id="text">hello world</Div>
+        
+        <div id="star">
+            
+
+        </div>
+    </body>
+    <script>
+        var elem = document.getElementById("text");
+        elem.innerText ="hello prafulla";
+        elem.style.backgroundColor ="red";
+        var stardiv = document.getElementById("star");
+        stardiv.innerHTML="";
+        
+        var flag = true;
+        setInterval(() =>
+        {
+            if(flag){
+                elem.style.backgroundColor="red";
+            }
+            else{
+                elem.style.backgroundColor="blue";
+            }
+            flag = !flag;
+        },500);
+        var sta2;
+        for(var sta2=0;sta2>5;sta2++)
+        {
+            stardiv.innerHTML= stardiv.innerHTML+"<div> * </div>";
+        
+        }
+    </script>
+</html>
